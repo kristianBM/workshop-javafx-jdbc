@@ -28,6 +28,11 @@ public class MainViewController implements Initializable{
 	private MenuItem menuItemAbout;
 	
 	@FXML
+	public void onMenuItemDepartmentAction() {
+		loadView("/gui/DepartmentList.fxml");
+	}
+	
+	@FXML
 	public void onmenuItemAboutAction() {
 		loadView("/gui/About.fxml");
 	}
