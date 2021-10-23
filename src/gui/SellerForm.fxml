@@ -44,6 +44,10 @@
             </Label>
             <TextField fx:id="txtId" editable="false" promptText="Automatic id generation ..." GridPane.columnIndex="1" />
             <TextField fx:id="txtName" promptText="Enter seller name ..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtEmail" promptText="Enter seller email ..." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <DatePicker fx:id="dpBirthDate" prefHeight="25.0" prefWidth="216.0" promptText="Enter seller birth date ..." GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtBaseSalary" promptText="Enter seller salary" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="comboBoxDepartment" prefHeight="25.0" prefWidth="219.0" promptText="Department list ..." GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.rowIndex="7">
                <children>
                   <Button fx:id="btSave" mnemonicParsing="false" onAction="#onBtSaveAction" text="Save" />
@@ -53,11 +57,6 @@
                      </opaqueInsets></Button>
                </children>
             </HBox>
-            <Label fx:id="labelErrorName" contentDisplay="RIGHT" lineSpacing="10.0" prefHeight="30.0" prefWidth="13.0" textFill="#e80000" GridPane.columnIndex="2" GridPane.rowIndex="1">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
             <Label text="Email" GridPane.rowIndex="2">
                <font>
                   <Font size="20.0" />
@@ -73,30 +72,15 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <TextField fx:id="txtEmail" promptText="Enter seller email ..." GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField fx:id="txtBaseSalary" promptText="Enter seller salary" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label fx:id="labelErrorEmail" textFill="#e80000" GridPane.columnIndex="2" GridPane.rowIndex="2">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
-            <Label fx:id="labelErrorBirthDate" textFill="#e80000" GridPane.columnIndex="2" GridPane.rowIndex="3">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
-            <Label fx:id="labelErrorBaseSalary" textFill="#e80000" GridPane.columnIndex="2" GridPane.rowIndex="4">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
-            <DatePicker fx:id="dpBirthDate" prefHeight="25.0" prefWidth="216.0" promptText="Enter seller birth date ..." GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="labelErrorEmail" textFill="#e80000" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="labelErrorBirthDate" textFill="#e80000" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="labelErrorBaseSalary" textFill="#e80000" GridPane.columnIndex="2" GridPane.rowIndex="4" />
             <Label text="Department" GridPane.rowIndex="5">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <ComboBox fx:id="comboBoxDepartment" prefHeight="25.0" prefWidth="219.0" promptText="Department list ..." GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="labelErrorName" textFill="#e80000" GridPane.columnIndex="2" GridPane.rowIndex="1" />
          </children>
       </GridPane>
    </children>
